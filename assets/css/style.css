@@ -1,0 +1,100 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--fontFamily);
+}
+
+.start{
+    width: 100%;
+    max-width: 220px;
+    background-color: var(--green);
+    padding: 8px 12px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.start:active{
+    position: relative;
+    top: 1px;
+}
+
+.start:focus{
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.box{
+    max-width: 450px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.petImg{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.imgDog{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+
+.item{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    font-size: 3em;
+    transform: rotateY(180deg);
+    transition: .25s;
+}
+
+.item::after{
+    content: "Pets";
+    position: absolute;
+    inset: 0;
+    background-color:var(--gray);
+    transition: 0.25s;
+    transform: scaleX(-1);
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.item.boxOpen{
+    transform: rotateY(0deg);
+}
+
+.boxOpen::after,
+.boxMatch::after{
+    transform: rotateY(180deg);
+}
