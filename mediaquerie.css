@@ -1,0 +1,32 @@
+@media screen and (max-width: 480px){
+    .container h1{
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+    
+    .box{
+        width: 100vw;
+    }
+
+    .petImg.item{
+        width: 75px;
+        height: 75px;
+    }
+
+    .petImg.item.boxOpen .imgDog{
+        width: 75px;
+        height: 75px;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+
+    .body{
+        min-width: 320px;
+    }
+
+    .container h1 {
+        font-size: 1.3rem;
+    }
+}
