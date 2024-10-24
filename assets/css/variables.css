@@ -1,0 +1,9 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --pink: #800080;
+    --gray: #202020;
+    --yellow: #ffff00;
+    --green: rgb(128, 240, 16);
+    --fontFamily: monospace, sans-serif;
+}
